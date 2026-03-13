@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Udruga SWITCH - Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Bebas Neue for display headings, DM Sans for body — editorial Swiss pairing -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER / NAV
+  ============================================================ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">SWITCH x DESIGN</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#materials" class="nav-link">Materijali</a>
+        <a href="#resources" class="nav-link">Resursi</a>
+        <a href="#footer" class="nav-link">O udruzi</a>
+      </nav>
+      <!-- Hamburger for mobile -->
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile drawer -->
+    <div class="nav-drawer" aria-hidden="true">
+      <a href="#materials" class="nav-link">Materijali</a>
+      <a href="#resources" class="nav-link">Resursi</a>
+      <a href="#footer" class="nav-link">O udruzi</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-tag">10-tjedna radionica DESIGN | Grafički i web dizajn | Figma & Framer</div>
+        <h1 class="hero-heading">
+          Dobrodošli na<br/>
+          <em>DESIGN</em><br/>
+          radionicu.
+        </h1>
+        <p class="hero-sub">
+          Sve što vam treba - vježbe, materijali, alati i inspiracija - organizirano na jednom mjestu tijekom trajanja tečaja.
+        </p>
+      </div>
+      <!-- Decorative rule -->
+      <div class="hero-rule" aria-hidden="true"></div>
+    </section>
+
+    <!-- ============================================================
+         MATERIALS SECTION
+    ============================================================ -->
+    <section class="section" id="materials">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-label">01 — Materijali potrebni za radionicu</span>
+          <h2 class="section-title">Tjedni resursi</h2>
+          <p class="section-desc">
+            Datoteke su zaštićene lozinkom. Vaš predavač će podijeliti pristupni kod na početku predavanja dijela gradiva.
+          </p>
+        </header>
+
+        <!-- Materials grid — add new <article class="card"> blocks here for future weeks -->
+        <div class="card-grid" id="materials-grid">
+
+          <!-- Card 1: Practice File -->
+          <article class="card"
+            data-url="https://drive.google.com/drive/folders/placeholder-practice"
+            data-label="Datoteka za vježbu"
+            data-password="02design2026!">
+            <div class="card-week">Tjedan 02</div>
+            <h3 class="card-title">Datoteka za vježbu</h3>
+            <p class="card-desc">
+              Figma dokument koji prati ovotjednu nastavu uživo. Uključuje sve osnovne alate u FIGMI.
+            </p>
+            <div class="card-meta">
+              <span class="card-type">Figma · .fig</span>
+            </div>
+            <button class="btn btn-download" aria-label="Preuzmi datoteku za vježbu">
+              Preuzmi
+              <svg aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 3v10M6 9l4 4 4-4"/><path d="M3 16h14"/>
+              </svg>
+            </button>
+          </article>
+
+          <!-- Card 2: Font Book -->
+          <article class="card"
+            data-url="https://drive.google.com/drive/folders/placeholder-fontbook"
+            data-label="Font Book"
+            data-password="2026font05!">
+            <div class="card-week">Tjedan 05</div>
+            <h3 class="card-title">Font Book</h3>
+            <p class="card-desc">
+              Figma dokument s odabranim fontovima koje koristimo tijekom cijelog tečaja, s bilješkama o sparivanju i primjerima korištenja.
+            </p>
+            <div class="card-meta">
+              <span class="card-type">Figma · .fig</span>
+            </div>
+            <button class="btn btn-download" aria-label="Preuzmi Font Book">
+              Preuzmi
+              <svg aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 3v10M6 9l4 4 4-4"/><path d="M3 16h14"/>
+              </svg>
+            </button>
+          </article>
+
+          <!-- Card 3: Web Template -->
+          <article class="card"
+            data-url="https://drive.google.com/drive/folders/placeholder-webtemplate"
+            data-label="Web Template"
+            data-password="DeSiGn2026!">
+            <div class="card-week">Tjedan 09</div>
+            <h3 class="card-title">Web Template</h3>
+            <p class="card-desc">
+              Predložak u FIGMI napravljen od strane vaših predavača, da možete nakon radionica pratiti kako pravilno strukturirati web dizajn u Figmi.
+            </p>
+            <div class="card-meta">
+              <span class="card-type">FIGMA · .fig</span>
+            </div>
+            <button class="btn btn-download" aria-label="Preuzmi Web Template">
+              Preuzmi
+              <svg aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 3v10M6 9l4 4 4-4"/><path d="M3 16h14"/>
+              </svg>
+            </button>
+          </article>
+
+          <!--
+            ── HOW TO ADD MORE CARDS ──────────────────────────────────────────
+            Copy the <article> block above, update:
+              data-url="..." → the Google Drive / download link
+              data-label="..." → displayed in the modal title
+              .card-week     → e.g. Week 04
+              .card-title    → file name
+              .card-desc     → short description
+              .card-type     → format info
+            ──────────────────────────────────────────────────────────────────
+          -->
+
+        </div><!-- /card-grid -->
+      </div>
+    </section>
+
+    <!-- ============================================================
+         RESOURCES SECTION
+    ============================================================ -->
+    <section class="section section-alt" id="resources">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-label">02 — Zanimljivi materijali</span>
+          <h2 class="section-title">Resursi & Inspiracija</h2>
+        </header>
+
+        <div class="resources-grid">
+
+          <!-- Column A: Useful Websites -->
+          <div class="resource-col">
+            <h3 class="resource-col-title">Korisne web stranice</h3>
+            <ul class="resource-list">
+              <li>
+                <a href="https://fonts.google.com" target="_blank" rel="noopener" class="resource-link">
+                  <span class="resource-link-name">Google Fonts</span>
+                  <span class="resource-link-desc">Besplatni fontovi</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://coolors.co" target="_blank" rel="noopener" class="resource-link">
+                  <span class="resource-link-name">Coolors</span>
+                  <span class="resource-link-desc">Generiranje palete boja i gradienata</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://typescale.com" target="_blank" rel="noopener" class="resource-link">
+                  <span class="resource-link-name">Type Scale</span>
+                  <span class="resource-link-desc">Kalkulator hijerarhije vizualnih tipova</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.canva.com/colors/color-wheel/" target="_blank" rel="noopener" class="resource-link">
+                  <span class="resource-link-name">Colour Wheel</span>
+                  <span class="resource-link-desc">Teorija boja by Canva</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://material.io/design/color/the-color-system.html" target="_blank" rel="noopener" class="resource-link">
+                  <span class="resource-link-name">Material Colour System</span>
+                  <span class="resource-link-desc">Googleov sustavni pristup bojama u korisničkom sučelju</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.behance.net" target="_blank" rel="noopener" class="resource-link">
+                  <span class="resource-link-name">Behance</span>
+                  <span class="resource-link-desc">Portfolio platforma za inspiracije</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.awwwards.com" target="_blank" rel="noopener" class="resource-link">
+                  <span class="resource-link-name">Awwwards</span>
+                  <span class="resource-link-desc">Nagrađene web stranice za referencu web dizajna</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column B: Tips & Facts -->
+          <div class="resource-col">
+            <h3 class="resource-col-title">Zanimljive web stranice</h3>
+            <ul class="tips-list">
+              <li class="tip-item">
+                <span class="tip-number">01</span>
+                <div>
+                  <strong>XX</strong>
+                  <p>XXX</p>
+                </div>
+              </li>
+              <li class="tip-item">
+                <span class="tip-number">02</span>
+                <div>
+                  <strong>XX</strong>
+                  <p>XXX</p>
+                </div>
+              </li>
+              <li class="tip-item">
+                <span class="tip-number">03</span>
+                <div>
+                  <strong>XX</strong>
+                  <p>XXX</p>
+                </div>
+              </li>
+              <li class="tip-item">
+                <span class="tip-number">04</span>
+                <div>
+                  <strong>XX</strong>
+                  <p>XXX</p>
+                </div>
+              </li>
+              <li class="tip-item">
+                <span class="tip-number">05</span>
+                <div>
+                  <strong>XX</strong>
+                  <p>XXX</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div><!-- /resources-grid -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer" id="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo">SWITCH<span class="logo-accent">X</span>DESIGN</span>
+        <p class="footer-tagline">Stranica napravljena od predavača za polaznike.</p>
+      </div>
+      <p class="footer-copy">
+        &copy; <span id="year"></span> made by RoupDesign & Scribus, powered by SWITCH. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       PASSWORD MODAL
+  ============================================================ -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
+      <div class="modal-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="11" width="18" height="11" rx="2"/>
+          <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+        </svg>
+      </div>
+      <h2 class="modal-title" id="modal-title">Zaštićeni resursi !</h2>
+      <p class="modal-desc">Unesi lozinku za pristup <strong id="modal-item-name"></strong>.</p>
+      <div class="modal-field">
+        <input
+          type="password"
+          id="modal-password"
+          class="modal-input"
+          placeholder="Course password"
+          autocomplete="current-password"
+          aria-label="Course password"
+        />
+        <p class="modal-error" id="modal-error" role="alert" aria-live="polite"></p>
+      </div>
+      <button class="btn btn-primary modal-submit" id="modal-submit">Pristupi</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
