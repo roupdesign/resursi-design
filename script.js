@@ -170,7 +170,7 @@ function handleSubmit() {
   const entered = passwordInput.value.trim();
 
   if (!entered) {
-    showError('Please enter the course password.');
+    showError('Molimo vas unesite lozinku.');
     return;
   }
 
@@ -180,7 +180,7 @@ function handleSubmit() {
     closeModal();
   } else {
     // ❌ Wrong password — show error and clear the field
-    showError('Incorrect password. Please try again.');
+    showError('Pogrešna lozinka. Pokušaj ponovno.');
     passwordInput.value = '';
   }
 }
